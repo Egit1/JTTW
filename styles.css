@@ -70,7 +70,12 @@ ul.Links_list {
     font-size: 1.05rem;
     transition: all .50s ease;
 }
-.Links_list .new-visit {
+.Links_list .new-here {
+    display: none;
+    margin-bottom: 100px;
+}
+
+.Links_list .new-here a {
     padding: 10px;
 }
 .Links_list a:hover  {
