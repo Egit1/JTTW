@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a,ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.1), #1091e7), url(images/pexels-luis-quintero-2774546.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 1px 1px 2px #000; */
+    background: transparent;
+    transition: all .50s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* padding: 15px 5% 15px 10%; */
+    transition: all .50s ease;
+}
+
+.church_logo img {
+    height: 60px;
+    padding: 7px;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 50%;
+}
+
+.church_name {
+    font-size: 1.20rem;
+    text-transform: capitalize;
+    color: transparent;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(61, 255, 255), rgb(255, 210, 7));
+    background-clip: text;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(30px);
+    transform: translateX(-2px);
+}
+
+ul.Links_list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all .50s ease;
+}
+.Links_list a {
+    color: white;
+    font-size: 1.05rem;
+    transition: all .50s ease;
+}
+.Links_list .new-visit {
+    padding: 10px;
+}
+.Links_list a:hover  {
+    background: linear-gradient(to right, rgb(61, 255, 255), rgb(255, 210, 7));
+    background-clip: text;
+    color: transparent;
+}
+ul.social_Links {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    border-radius: 20px;
+}
+span.showIcons {
+    display: none;
+    background: linear-gradient(to right, rgb(179, 174, 174), rgb(128, 115, 0)), rgba(0,0,0,0.1);
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+ul.social_Links a {
+    font-size: 1.2rem;
+    color: white;
+    transition: all .50s ease;
+}
+
+.social_Links a:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, rgb(61, 255, 255), rgb(255, 210, 7));
+    background-clip: text;
+    color: transparent;
+}
+
+#navToggle {
+    display: none;
+    font-size: 1.25rem;
+    color: transparent;
+    background:  linear-gradient(to right, rgb(61, 255, 255), rgb(255, 210, 7));
+    background-clip: text;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.missionText  { 
+    font-size: 8vmin;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    transition: all .50s ease;
+    margin-bottom: 12%;
+    padding: 0 15%;
+    line-height: 1.75;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 4s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.bg-teal-800 {
+    background: teal;
+}
