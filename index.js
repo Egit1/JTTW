@@ -3,6 +3,7 @@ const showIcon = document.querySelector('.showIcons');
 const socialLinks = document.querySelector('.social_Links');
 const barIcon = document.querySelector('.fa-bars');
 const wrapper = document.querySelector('.Links_list');
+const missionText  = document.querySelector('.missionText');
 
 showIcon.onclick = ()=> {
     socialLinks.classList.toggle('openIcon')
@@ -11,6 +12,7 @@ showIcon.onclick = ()=> {
 function menuBar() {
     barIcon.classList.toggle('fa-times');
     wrapper.classList.toggle('open');
+    missionText.classList.toggle('opacity-0')
 }
 
 
