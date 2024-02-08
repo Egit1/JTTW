@@ -31,3 +31,13 @@
         display: block;
     }
 }
+
+@media (max-width: 600px) {
+    ul.social_Links {
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        display: block;
+        opacity: none;
+    }
+}
