@@ -40,4 +40,9 @@
         display: block;
         opacity: none;
     }
+
+
+    header {
+        height: 50vh;
+    }
 }
